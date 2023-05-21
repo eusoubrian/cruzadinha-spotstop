@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Fira Sans Extra Condensed';
+    background-color: #f3c899;
+}
+
+
+.palavras-cruzadas {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.base-memoria-massa {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    width: 32px;
+    height: 32px;
+    border: 1px black solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-item-1 {
+    width: 32px;
+    height: 32px;
+    border: 1px black solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.flex-item-num {
+    width: 32px;
+    height: 32px;
+    border: 1px black solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e8b57;
+    font-weight: 700;
+}
+
+.base {
+    display: flex;
+    gap: 10px;
+}
+
+.base-letra {
+    display: flex;
+    gap: 10px;
+    color: #2e8b57;
+    font-weight: 700;
+    
+}
+
+.flex-item p {
+    width: fit-content;
+    margin: auto;
+}
+
+.caixa-footer {
+    background-color: #fe9f00;
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
