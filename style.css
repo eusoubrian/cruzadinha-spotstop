@@ -87,7 +87,7 @@ body {
 .flex-item p {
     width: fit-content;
     margin: auto;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 }
 

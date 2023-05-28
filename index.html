@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,9 @@
 <body>
     <h1>SPOTSTOP</h1>
     <div class="palavras-cruzadas">
+
+        <!-- LINHA 0 -->
+
         <div class="base-letra">
             <div class="flex-item-cord">
                 <p>/</p>
@@ -95,6 +98,9 @@
                 <p>Z</p>
             </div>
         </div>
+
+        <!-- LINHA 1 -->
+
         <div class="base">
             <div class="flex-item-num">
                 <p>1</p>
@@ -179,6 +185,8 @@
             </div>
         </div>
 
+        <!-- LINHA 2 -->
+
         <div class="base">
             <div class="flex-item-none">
                 <p>16</p>
@@ -262,6 +270,9 @@
                 <p></p>
             </div>
         </div>
+
+        <!-- LINHA 3 -->
+
         <div class="base ">
             <div class="flex-item-num">
                 <p>3</p>
@@ -345,6 +356,9 @@
                 <p></p>
             </div>
         </div>
+
+        <!-- LINHA 4 -->
+
         <div class="base ">
             <div class="flex-item-num">
                 <p>4</p>
@@ -428,6 +442,9 @@
                 <p></p>
             </div>
         </div>
+
+        <!-- LINHA 5 -->
+
         <div class="base ">
             <div class="flex-item-num">
                 <p>5</p>
@@ -511,6 +528,9 @@
                 <p></p>
             </div>
         </div>
+
+        <!-- LINHA 6 -->
+
         <div class="base ">
             <div class="flex-item-num">
                 <p>6</p>
@@ -594,10 +614,19 @@
                 <p></p>
             </div>
         </div>
+
+        <!-- LINHA 7 -->
+
         <div class="base">
+
+            <!-- COLUNA / -->
+
             <div class="flex-item-num">
                 <p>7</p>
             </div>
+
+            <!-- COLUNA A -->
+
             <div class="flex-item-1">
                 <p></p>
             </div>
@@ -628,8 +657,11 @@
             <div class="flex-item">
                 <p>R</p>
             </div>
+
+            <!-- COLUNA K -->
+
             <div class="flex-item">
-                <p>E</p>
+                <p class="eprom_p">E</p>
             </div>
             <div class="flex-item">
                 <p>A</p>
@@ -677,6 +709,9 @@
                 <p></p>
             </div>
         </div>
+
+        <!-- LINHA 8 -->
+
         <div class="base">
             <div class="flex-item-num">
                 <p>8</p>
@@ -712,7 +747,7 @@
                 <p></p>
             </div>
             <div class="flex-item">
-                <p>P</p>
+                <p class="eprom_p">P</p>
             </div>
             <div class="flex-item-1">
                 <p></p>
@@ -760,6 +795,9 @@
                 <p>5</p>
             </div>
         </div>
+
+        <!-- LINHA 9 -->
+
         <div class="base ">
             <div class="flex-item-none">
                 <p>15</p>
@@ -843,6 +881,9 @@
                 <p>F</p>
             </div>
         </div>
+
+        <!-- LINHA 10 -->
+
         <div class="base">
             <div class="flex-item-num">
                 <p>10</p>
@@ -926,6 +967,9 @@
                 <p>L</p>
             </div>
         </div>
+
+        <!-- LINHA 11 -->
+
         <div class="base">
             <div class="flex-item-num">
                 <p>11</p>
@@ -1009,6 +1053,9 @@
                 <p>A</p>
             </div>
         </div>
+
+        <!-- LINHA 12 -->
+
         <div class="base">
             <div class="flex-item-num">
                 <p>12</p>
@@ -1092,6 +1139,9 @@
                 <p>S</p>
             </div>
         </div>
+
+        <!-- LINHA 13 -->
+
         <div class="base">
             <div class="flex-item-num">
                 <p>13</p>
@@ -1330,8 +1380,9 @@
 
 <script>
 
-    const memomassa = document.getElementById('memomassa_p')
+    const memomassa = document.getElementsByClassName('memomassa_p')
     const cpu = document.getElementsByClassName("cpu_p")
+    const ula = document.getElementsByClassName()
 
 
     var palavras = ['CPU', 'ULA', 'RAM', 
@@ -1345,7 +1396,7 @@
 
         if(id_cpu.value == 'CPU') {
             for (var i = 0; i < cpu.length; i++) {
-            console.log(cpu[i].style.opacity = 1);
+            console.log(cpu[i].style.opacity = 0);
             };
         }
         
