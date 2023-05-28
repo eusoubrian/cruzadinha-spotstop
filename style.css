@@ -38,6 +38,17 @@ body {
 
 }
 
+.flex-item-cord {
+    width: 32px;
+    height: 32px;
+    border: 1px black solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .flex-item-1 {
     width: 32px;
     height: 32px;
@@ -76,6 +87,8 @@ body {
 .flex-item p {
     width: fit-content;
     margin: auto;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .flex-item-none {
