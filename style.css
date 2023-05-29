@@ -12,6 +12,62 @@ body {
 }
 
 
+
+
+.spotstop {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.spotstop img {
+    width: 400px;
+    height: 160px;
+}
+
+.botao-legal {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+  }
+
+  .botao-legal:after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 10%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+
+  .botao-legal:hover {
+    transform: scale(1.15);
+  }
+
+  
+
+.info p {
+    font-size: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
 .palavras-cruzadas {
     height: 700px;
     display: flex;
@@ -47,7 +103,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    opacity: 0;
 }
 
 .flex-item-1 {
@@ -71,6 +127,7 @@ body {
     align-items: center;
     color: #2e8b57;
     font-weight: 700;
+    opacity: 0;
 }
 
 .base {
@@ -82,7 +139,11 @@ body {
     display: flex;
     gap: 10px;
     color: #2e8b57;
-    font-weight: 700; 
+    font-weight: 700;
+}
+
+.base-letra .flex-item-none {
+    color: #000000;
 }
 
 .flex-item p {
@@ -104,6 +165,7 @@ body {
     border: 1px #996f27 solid;
     font-weight: 600;
 }
+
 
 .caixa-footer {
     background-color: #fe9f00;
@@ -139,7 +201,7 @@ body {
     padding: 1%;
 }
 
-.definicoes button {
+.definicoes .botao-legal {
     height: 40px;
     width: 70px;
     font-size: 1.1vmax;
@@ -156,4 +218,18 @@ body {
 
 .checkbox {
     width: 100px;
+}
+
+.verificar {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: black 1px solid;
 }

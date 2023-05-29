@@ -11,7 +11,13 @@
 </head>
 
 <body>
-    <h1>SPOTSTOP</h1>
+
+    <div class="spotstop">
+        <img src="SpotStop_Logo1.png" alt="">
+    </div>
+
+    
+
     <div class="palavras-cruzadas">
 
         <!-- LINHA 0 -->
@@ -1228,6 +1234,18 @@
         </div>
 
     </div>
+    <!-- <div class="info">
+        <div class="opcao-1">
+            <h2>Opção 1</h2> 
+            <p>Responder as questões em sequência de 1 a 18, sem pular</p> 
+            <button class="botao-legal" class="verificar" onclick="">Clique Aqui</button>
+        </div>
+        <div class="opcao-2">
+            <h2>Opção 2</h2>
+            <p>Liberar dicas aleatórias pelas Palavras-cruzadas</p>
+            <button class="botao-legal" class="verificar" onclick="dica()">Clique Aqui</button>
+        </div>
+    </div> -->
 
     <div class="caixa-footer">
         <div class="caixa-palavras">
@@ -1235,74 +1253,74 @@
 
                 <p> 1- Memória não volátil permanente, onde as informações permanecem mesmo se desligar o computador ou
                     não tiver fonte de energia. <br>
-                    R: <input id="id_memo_massa" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_memo_massa" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p> 2- Hardware que interpreta instruções de um software através de operações lógicas e aritméticas. <br>
-                    R: <input id="id_cpu" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_cpu" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" class="verificar" class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     3- Basicamente trabalha com transferência de dados entre o computador e dispositivos de entrada e
                     saída. <br>
-                    R: <input id="id_dma" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_dma" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     4- Ficam registrados na <input id="id_eprom" onkeyup="this.value = this.value.toUpperCase();"> todas as informações e parâmetros preestabelecidos no
                     Microprocessador.
-                    <button onclick="verificar()">Verificar</button>
+                    <button class="verificar" class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     5- Ela é frequentemente usada em eletrônicos portáteis, tais como dispositivos de música digital
                     (MP3). <br>
-                    R: <input id="id_flash" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_flash" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     6- É um tipo de memória que, como o próprio nome sugere, permite apenas a leitura de dados e não a
                     escrita. <br>
-                    R: <input id="id_rom" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_rom" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     7- Em conjunto com o processador, auxilia no armazenamento temporário de dados, tornando mais rápida
                     a execução de certas tarefas. <br>
-                    R: <input id="id_ram" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_ram" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     8- É um circuito digital responsável pelas operações lógicas e aritméticas no processador de um
                     computador. <br>
-                    R: <input id="id_ula" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_ula" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     9- Entrada de nível lógico que, quando em 0, ativa saídas para fornecer dados armazenados para serem
                     lidos. <br>
-                    R: <input id="id_cs" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_cs" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     10- Processador que possui dois cérebros trabalhando ao mesmo tempo para aplicações cotidianas. <br>
-                    R: <input id="id_dual_core" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_dual_core" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     11- Destinado a reduzir a latência no acesso de dados, é uma técnica de armazenamento capaz de
                     acessar dados em uma velocidade maior, sendo implementados em Hardware e Software. <br>
-                    R: <input id="id_cache" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_cache" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
@@ -1310,7 +1328,7 @@
                     12- Arquitetura: 45, 32, 22 e 14nm <br>
                     Fabricante Intel <br>
                     Produzido desde 2009 <br>
-                    R: <input id="id_i5" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_i5" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
@@ -1318,37 +1336,37 @@
                     13- Arquitetura: 45, 32, 22, 14 e 10nm <br>
                     Fabricante Intel <br>
                     Produzido desde 2008 <br>
-                    R: <input id="id_i7" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_i7" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     14- A <input id="id_threads" onkeyup="this.value = this.value.toUpperCase();"> recebe e executa todas as instruções, como uma ordem do que será feito por vez, é como um subsistema dentro do processador. <br>
-                    <button onclick="verificar()">Verificar</button>
+                    <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     15- Esses espaços são parecidos com variáveis de uma linguagem de programação de alto nível, onde se guarda um valor qualquer até que este seja modificado. <br>
-                    R: <input id="id_registradores" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_registradores" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     16- Processador que possui quatro cérebros trabalhando ao mesmo tempo para aplicações que necessitam de mais processamento. <br>
-                    R: <input id="id_quad_core" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_quad_core" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     17- Arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física, armazenados em números binários. <br>
-                    R: <input id="id_address_bus" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_address_bus" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
                 <hr>
 
                 <p>
                     18- Arquitetura de barramento de computador consistido em um conector ou conjunto de fios, que fornece transporte de dados. <br>
-                    R: <input id="id_data_bus" onkeyup="this.value = this.value.toUpperCase();"> <button onclick="verificar()">Verificar</button>
+                    R: <input id="id_data_bus" onkeyup="this.value = this.value.toUpperCase();"> <button class="verificar" onclick="verificar()">Verificar</button>
                 </p>
             </div>
             <div class="respostas">
@@ -1381,6 +1399,11 @@
 
 <script>
 
+    function dica() {
+
+    }
+
+
     const memomassa = document.getElementsByClassName("memomassa_p")
     const cpu = document.getElementsByClassName("cpu_p")
     const dma = document.getElementsByClassName("dma_p")
@@ -1409,7 +1432,7 @@
             )
     }
 
-    var tentativas = 10
+    var tentativas = 3
     function verificar() {
         
 
