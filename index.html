@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cruzadinha | SpotStop</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -1399,102 +1400,153 @@
     const addressbus = document.getElementsByClassName("addressbus_p")
     const databus = document.getElementsByClassName("databus_p")
     
+
+    function acerto() {
+        return Swal.fire(
+            'Parabéns Guri!',
+            'Você acertou a resposta!',
+            'success'
+            )
+    }
+
+    var tentativas = 10
     function verificar() {
+        
 
         if(id_memo_massa.value == 'MEMORIA DE MASSA') {
             for (var i = 0; i < memomassa.length; i++) {
             console.log(memomassa[i].style.opacity = 1);
+            acerto()
             } id_memo_massa.value = ''
 
         } else if(id_cpu.value == 'CPU') {
             for (var i = 0; i < cpu.length; i++) {
             console.log(cpu[i].style.opacity = 1);
+            acerto()
             } id_cpu.value = ''
 
         } else if(id_dma.value == 'DMA') {
             for (var i = 0; i < dma.length; i++) {
             console.log(dma[i].style.opacity = 1);
-            } id_dma.value = ''
+            acerto()
+        } id_dma.value = ''
 
         } else if(id_eprom.value == 'EPROM') {
             for (var i = 0; i < eprom.length; i++) {
             console.log(eprom[i].style.opacity = 1);
-            } id_eprom.value = ''
+            acerto()
+        } id_eprom.value = ''
 
         } else if(id_flash.value == 'FLASH') {
             for (var i = 0; i < flash.length; i++) {
             console.log(flash[i].style.opacity = 1);
-            } id_flash.value = ''
+            acerto()
+        } id_flash.value = ''
 
         } else if(id_rom.value == 'ROM') {
             for (var i = 0; i < rom.length; i++) {
             console.log(rom[i].style.opacity = 1);
-            } id_rom.value = ''
+            acerto()
+        } id_rom.value = ''
 
         } else if(id_ram.value == 'RAM') {
             for (var i = 0; i < ram.length; i++) {
             console.log(ram[i].style.opacity = 1);
-            } id_ram.value = ''
+            acerto()
+        } id_ram.value = ''
 
         } else if(id_ula.value == 'ULA') {
             for (var i = 0; i < ula.length; i++) {
             console.log(ula[i].style.opacity = 1);
-            } id_ula.value = ''
+            acerto()
+        } id_ula.value = ''
 
         } else if(id_cs.value == 'CS') {
             for (var i = 0; i < cs.length; i++) {
             console.log(cs[i].style.opacity = 1);
-            } id_cs.value = ''
+            acerto()
+        } id_cs.value = ''
 
         } else if(id_dual_core.value == 'DUAL CORE') {
             for (var i = 0; i < dualcore.length; i++) {
             console.log(dualcore[i].style.opacity = 1);
-            } id_dual_core.value = ''
+            acerto()
+        } id_dual_core.value = ''
 
         } else if(id_cache.value == 'CACHE') {
             for (var i = 0; i < cache.length; i++) {
             console.log(cache[i].style.opacity = 1);
-            } id_cache.value = ''
+            acerto()
+        } id_cache.value = ''
 
         } else if(id_i5.value == 'I5') {
             for (var i = 0; i < i5.length; i++) {
             console.log(i5[i].style.opacity = 1);
-            } id_i5.value = ''
+            acerto()
+        } id_i5.value = ''
 
         } else if(id_i7.value == 'I7') {
             for (var i = 0; i < i7.length; i++) {
             console.log(i7[i].style.opacity = 1);
-            } id_i7.value = ''
+            acerto()
+        } id_i7.value = ''
 
         } else if(id_threads.value == 'THREAD') {
             for (var i = 0; i < threads.length; i++) {
             console.log(threads[i].style.opacity = 1);
-            } id_threads.value = ''
+            acerto()
+        } id_threads.value = ''
 
         } else if(id_registradores.value == 'REGISTRADORES') {
             for (var i = 0; i < registradores.length; i++) {
             console.log(registradores[i].style.opacity = 1);
-            } id_registradores.value = ''
+            acerto()
+        } id_registradores.value = ''
 
         } else if(id_quad_core.value == 'QUAD CORE') {
             for (var i = 0; i < quadcore.length; i++) {
             console.log(quadcore[i].style.opacity = 1);
-            } id_quad_core.value = ''
+            acerto()
+        } id_quad_core.value = ''
 
         } else if(id_address_bus.value == 'ADDRESS BUS') {
             for (var i = 0; i < addressbus.length; i++) {
             console.log(addressbus[i].style.opacity = 1);
-            } id_address_bus.value = ''
+            acerto()
+        } id_address_bus.value = ''
 
         } else if(id_data_bus.value == 'DATA BUS') {
             for (var i = 0; i < databus.length; i++) {
             console.log(databus[i].style.opacity = 1);
-            } id_data_bus.value = ''
-        }
+            acerto()
+        } id_data_bus.value = ''
         
+        }  else {
+        Swal.fire({
+        icon: 'error',
+        title: 'Bah Guri...',
+        text: 'Precisa melhorar...'
+        })
+        tentativas--
+        }
+        if (tentativas < 1) {
+            Swal.fire({
+            title: 'Suas tentativas acabaram!',
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            background: '#fff url("chinaAPENAS")',
+            backdrop: `
+            rgba(0,0,123,0.4)
+            url("gif_mao.gif")
+            left top
+            no-repeat
+            `
+        })
+        }
 
+        } 
 
-    }
 
 </script>
 
